@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        Button bt_delete = (Button) findViewById(R.id.button_delete);
+        Button bt_delete = (Button) findViewById(R.id.button_delete);//删除一个数
         bt_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 show.setText(num);
             }
         });
-        Button btt_delete = (Button) findViewById(R.id.button_delete);
+        Button btt_delete = (Button) findViewById(R.id.button_delete);//清空整个屏幕
         btt_delete.setOnLongClickListener(new View.OnLongClickListener() {
 
             @Override
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                     drg_flag = true;
                     Button btn = (Button)v;
                     btn.setText("DEG");
-                    show.setText("DEG模式，既输入120为120度");
+                    show.setText("DEG模式既输入120为120度");
                 }
 
             }
@@ -166,8 +166,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.button_sq:
                     take=Arithmetic.SQUARE;
+                    break;
                 case R.id.button_rt:
                     take =Arithmetic.ROOT;
+                    break;
             }
             num = "0";
             flg = 0;
@@ -176,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //实现cos，sin，tan，阶乘，%，以及π
+    //实现cos，sin，tan，阶乘，
     class OnTake implements View.OnClickListener {
 
         @Override

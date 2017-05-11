@@ -177,9 +177,7 @@
 
         </FrameLayout>
 
-        <!-- The navigation drawer -->
 
-        　　　　　　<!-- 左边弹出布局区 -->
         <LinearLayout
             android:layout_width="170dp"
             android:layout_height="300dp"
